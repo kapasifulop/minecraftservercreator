@@ -69,6 +69,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.rfs_txtbox = new System.Windows.Forms.TextBox();
             this.rfs_save = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.elobb_inditsdel = new mcsc.elobb_inditsdel();
             this.SuspendLayout();
             // 
@@ -530,7 +531,7 @@
             // 
             this.rfs_txtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rfs_txtbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rfs_txtbox.Location = new System.Drawing.Point(684, 406);
+            this.rfs_txtbox.Location = new System.Drawing.Point(651, 406);
             this.rfs_txtbox.MaxLength = 10;
             this.rfs_txtbox.Name = "rfs_txtbox";
             this.rfs_txtbox.Size = new System.Drawing.Size(52, 20);
@@ -551,15 +552,29 @@
             this.rfs_save.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rfs_save.Visible = false;
             // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label16.Location = new System.Drawing.Point(709, 403);
+            this.label16.MinimumSize = new System.Drawing.Size(100, 23);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(100, 23);
+            this.label16.TabIndex = 95;
+            this.label16.Text = "GB";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // elobb_inditsdel
             // 
+            this.elobb_inditsdel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.elobb_inditsdel.BackColor = System.Drawing.SystemColors.ControlDark;
             this.elobb_inditsdel.Cursor = System.Windows.Forms.Cursors.No;
             this.elobb_inditsdel.Location = new System.Drawing.Point(0, 0);
             this.elobb_inditsdel.MinimumSize = new System.Drawing.Size(959, 481);
             this.elobb_inditsdel.Name = "elobb_inditsdel";
             this.elobb_inditsdel.Size = new System.Drawing.Size(959, 481);
-            this.elobb_inditsdel.TabIndex = 95;
+            this.elobb_inditsdel.TabIndex = 96;
             // 
             // server_settings
             // 
@@ -567,6 +582,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 533);
             this.Controls.Add(this.elobb_inditsdel);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.rfs_save);
             this.Controls.Add(this.rfs_txtbox);
             this.Controls.Add(this.label1);
@@ -660,6 +676,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox rfs_txtbox;
         private System.Windows.Forms.Label rfs_save;
+        private System.Windows.Forms.Label label16;
         private elobb_inditsdel elobb_inditsdel;
     }
 }
