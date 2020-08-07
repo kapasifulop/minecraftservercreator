@@ -35,12 +35,12 @@
             this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.rectangleShape3 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.version = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.srv_name = new System.Windows.Forms.Label();
             this.name_box = new System.Windows.Forms.TextBox();
             this.next_btn = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.nextlbl = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.spec_car_lbl = new System.Windows.Forms.Label();
             this.fentiszar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -117,17 +117,17 @@
             this.version.TabIndex = 12;
             this.version.Text = "Beta";
             // 
-            // label1
+            // srv_name
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(0, 140);
-            this.label1.MinimumSize = new System.Drawing.Size(800, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(800, 32);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Mi legyen a szervered neve?";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.srv_name.AutoSize = true;
+            this.srv_name.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.srv_name.Location = new System.Drawing.Point(0, 140);
+            this.srv_name.MinimumSize = new System.Drawing.Size(800, 0);
+            this.srv_name.Name = "srv_name";
+            this.srv_name.Size = new System.Drawing.Size(800, 32);
+            this.srv_name.TabIndex = 13;
+            this.srv_name.Text = "Mi legyen a szervered neve?";
+            this.srv_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // name_box
             // 
@@ -173,32 +173,34 @@
             this.nextlbl.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.nextlbl.ForeColor = System.Drawing.Color.White;
             this.nextlbl.Location = new System.Drawing.Point(323, 374);
+            this.nextlbl.MinimumSize = new System.Drawing.Size(143, 42);
             this.nextlbl.Name = "nextlbl";
             this.nextlbl.Size = new System.Drawing.Size(143, 42);
             this.nextlbl.TabIndex = 16;
             this.nextlbl.Text = "Tovább";
+            this.nextlbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.nextlbl.Click += new System.EventHandler(this.tovabb);
             // 
-            // label2
+            // spec_car_lbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(0, 172);
-            this.label2.MinimumSize = new System.Drawing.Size(800, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(800, 13);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "(Lehetőleg ékezet nélküle nevet adj meg!)";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.spec_car_lbl.AutoSize = true;
+            this.spec_car_lbl.Location = new System.Drawing.Point(0, 172);
+            this.spec_car_lbl.MinimumSize = new System.Drawing.Size(800, 0);
+            this.spec_car_lbl.Name = "spec_car_lbl";
+            this.spec_car_lbl.Size = new System.Drawing.Size(800, 13);
+            this.spec_car_lbl.TabIndex = 17;
+            this.spec_car_lbl.Text = "(Lehetőleg ékezet nélküle nevet adj meg!)";
+            this.spec_car_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Server_Name
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.spec_car_lbl);
             this.Controls.Add(this.nextlbl);
             this.Controls.Add(this.name_box);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.srv_name);
             this.Controls.Add(this.version);
             this.Controls.Add(this.fentiszar);
             this.Controls.Add(this.shapeContainer1);
@@ -221,11 +223,11 @@
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape2;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape3;
         private System.Windows.Forms.Label version;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label srv_name;
         private System.Windows.Forms.TextBox name_box;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape next_btn;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private System.Windows.Forms.Label nextlbl;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label spec_car_lbl;
     }
 }

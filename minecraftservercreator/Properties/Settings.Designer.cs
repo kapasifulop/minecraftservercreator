@@ -176,5 +176,17 @@ namespace mcsc.Properties {
                 this["srv_created"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int lang {
+            get {
+                return ((int)(this["lang"]));
+            }
+            set {
+                this["lang"] = value;
+            }
+        }
     }
 }

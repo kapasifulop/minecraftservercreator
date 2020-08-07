@@ -245,6 +245,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Langs\Lang_en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lang_en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Langs\Lang_hu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lang_hu.resx</DependentUpon>
+    </Compile>
     <Compile Include="servers.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -326,6 +336,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pl_spigot_bukkit.resx">
       <DependentUpon>pl_spigot_bukkit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Langs\Lang_en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Lang_en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Langs\Lang_hu.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Lang_hu.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

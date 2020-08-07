@@ -1,4 +1,5 @@
-﻿using minecraftservercreator;
+﻿using mcsc.Properties.Langs;
+using minecraftservercreator;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,7 +27,18 @@ namespace mcsc
 
         private void Server_Name_Load(object sender, EventArgs e)
         {
-            version.Text = mcsc.Properties.Settings.Default.version;
+            if (mcsc.Properties.Settings.Default.lang == 1)
+            {
+                srv_name.Text = Lang_en.s_name;
+                spec_car_lbl.Text = Lang_en.spec_car;
+                nextlbl.Text = Lang_en.tovabb;
+            }
+            else if (mcsc.Properties.Settings.Default.lang == 0)
+            {
+                srv_name.Text = Lang_hu.s_name;
+                spec_car_lbl.Text = Lang_hu.spec_car;
+                nextlbl.Text = Lang_hu.tovabb;
+            }
         }
 
         private void tovabb(object sender, EventArgs e)
@@ -72,12 +84,28 @@ namespace mcsc
                 }
                 else
                 {
-                    MessageBox.Show("Ilyen nevű szerver már létezik! Adj meg egy másik nevet!", "HIBA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (mcsc.Properties.Settings.Default.lang == 1)
+                    {
+                        MessageBox.Show(Lang_en.already, Lang_en.error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (mcsc.Properties.Settings.Default.lang == 0)
+                    {
+                        MessageBox.Show(Lang_hu.already, Lang_hu.error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    
                 }
             }
             else
             {
-                MessageBox.Show("Add meg a szerver nevét!", "HIBA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (mcsc.Properties.Settings.Default.lang == 1)
+                {
+                    MessageBox.Show(Lang_en.enter_srv_name, Lang_en.error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (mcsc.Properties.Settings.Default.lang == 0)
+                {
+                    MessageBox.Show(Lang_hu.enter_srv_name, Lang_hu.error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
             }
         }
 

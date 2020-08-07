@@ -145,7 +145,7 @@
             this.kezdlapbtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.kezdlapbtn.Size = new System.Drawing.Size(230, 40);
             this.kezdlapbtn.TabIndex = 16;
-            this.kezdlapbtn.Text = "Kezdőlap";
+            this.kezdlapbtn.Text = "Home";
             this.kezdlapbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.kezdlapbtn.UseVisualStyleBackColor = false;
             this.kezdlapbtn.Click += new System.EventHandler(this.kezdlapbtn_Click);
@@ -217,7 +217,7 @@
             this.plugins_btn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.plugins_btn.Size = new System.Drawing.Size(230, 40);
             this.plugins_btn.TabIndex = 23;
-            this.plugins_btn.Text = "Pluginok";
+            this.plugins_btn.Text = "Plugins";
             this.plugins_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.plugins_btn.UseVisualStyleBackColor = false;
             this.plugins_btn.Click += new System.EventHandler(this.plugins_btn_Click);

@@ -37,13 +37,12 @@
             this.exit = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.fentiszar = new System.Windows.Forms.Panel();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.startlbl = new System.Windows.Forms.Label();
             this.szpanel = new System.Windows.Forms.Panel();
             this.szoveg = new System.Windows.Forms.Label();
             this.version = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.startlbl = new System.Windows.Forms.Label();
             this.fentiszar.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.szpanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,7 +80,7 @@
             this.start.Cursor = System.Windows.Forms.Cursors.Hand;
             this.start.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.start.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.Solid;
-            this.start.Location = new System.Drawing.Point(216, 350);
+            this.start.Location = new System.Drawing.Point(216, 367);
             this.start.Name = "start";
             this.start.SelectionColor = System.Drawing.SystemColors.ControlDark;
             this.start.Size = new System.Drawing.Size(346, 73);
@@ -151,29 +150,6 @@
             this.shapeContainer2.TabIndex = 0;
             this.shapeContainer2.TabStop = false;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.panel1.Controls.Add(this.startlbl);
-            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel1.Location = new System.Drawing.Point(229, 350);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(289, 74);
-            this.panel1.TabIndex = 3;
-            this.panel1.Click += new System.EventHandler(this.start_Click);
-            // 
-            // startlbl
-            // 
-            this.startlbl.AutoSize = true;
-            this.startlbl.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.startlbl.ForeColor = System.Drawing.Color.White;
-            this.startlbl.Location = new System.Drawing.Point(34, 18);
-            this.startlbl.Name = "startlbl";
-            this.startlbl.Size = new System.Drawing.Size(256, 42);
-            this.startlbl.TabIndex = 0;
-            this.startlbl.Text = "Fogjunk bele!";
-            this.startlbl.Click += new System.EventHandler(this.start_Click);
-            // 
             // szpanel
             // 
             this.szpanel.BackColor = System.Drawing.Color.Silver;
@@ -181,7 +157,7 @@
             this.szpanel.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.szpanel.Location = new System.Drawing.Point(12, 102);
             this.szpanel.Name = "szpanel";
-            this.szpanel.Size = new System.Drawing.Size(776, 242);
+            this.szpanel.Size = new System.Drawing.Size(776, 196);
             this.szpanel.TabIndex = 4;
             // 
             // szoveg
@@ -192,6 +168,7 @@
             this.szoveg.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.szoveg.ForeColor = System.Drawing.Color.Black;
             this.szoveg.Location = new System.Drawing.Point(0, 0);
+            this.szoveg.MaximumSize = new System.Drawing.Size(778, 190);
             this.szoveg.Name = "szoveg";
             this.szoveg.Size = new System.Drawing.Size(778, 190);
             this.szoveg.TabIndex = 0;
@@ -208,6 +185,33 @@
             this.version.TabIndex = 6;
             this.version.Text = "Beta";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(291, 304);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(212, 56);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "ENGLISH";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // startlbl
+            // 
+            this.startlbl.AutoSize = true;
+            this.startlbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.startlbl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.startlbl.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.startlbl.ForeColor = System.Drawing.Color.White;
+            this.startlbl.Location = new System.Drawing.Point(219, 385);
+            this.startlbl.MinimumSize = new System.Drawing.Size(340, 0);
+            this.startlbl.Name = "startlbl";
+            this.startlbl.Size = new System.Drawing.Size(340, 42);
+            this.startlbl.TabIndex = 0;
+            this.startlbl.Text = "Fogjunk bele!";
+            this.startlbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.startlbl.Click += new System.EventHandler(this.start_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,10 +220,11 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.startlbl);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.version);
             this.Controls.Add(this.fentiszar);
             this.Controls.Add(this.szpanel);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.welcome);
             this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -229,8 +234,6 @@
             this.Text = "kezdolap";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.fentiszar.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.szpanel.ResumeLayout(false);
             this.szpanel.PerformLayout();
             this.ResumeLayout(false);
@@ -243,8 +246,6 @@
         private System.Windows.Forms.Label welcome;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape start;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label startlbl;
         private System.Windows.Forms.Panel szpanel;
         private System.Windows.Forms.Label szoveg;
         private System.Windows.Forms.Panel fentiszar;
@@ -253,6 +254,8 @@
         private Microsoft.VisualBasic.PowerPacks.RectangleShape about;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer2;
         private System.Windows.Forms.Label version;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label startlbl;
     }
 }
 
