@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="text_long.Text" xml:space="preserve">
     <value>Válassz egy olyan verziót ami nem túl régi, de nem is nagyon új. 
 Ha nagyon újat választasz, sok kiegészítő (un. plugin) nem lesz elérhető. 
 Viszont ez a veszély akkor is előáll, ha nagyon régit választasz.</value>

@@ -29,23 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(agykerd));
-            this.label1 = new System.Windows.Forms.Label();
+            this.txt_box = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // txt_box
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(636, 270);
-            this.label1.TabIndex = 0;
-            this.label1.Text = resources.GetString("label1.Text");
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txt_box.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_box.AutoSize = true;
+            this.txt_box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txt_box.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txt_box.ForeColor = System.Drawing.Color.Maroon;
+            this.txt_box.Location = new System.Drawing.Point(12, 9);
+            this.txt_box.MaximumSize = new System.Drawing.Size(636, 270);
+            this.txt_box.Name = "txt_box";
+            this.txt_box.Size = new System.Drawing.Size(636, 270);
+            this.txt_box.TabIndex = 0;
+            this.txt_box.Text = resources.GetString("txt_box.Text");
+            this.txt_box.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
@@ -66,7 +67,7 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(654, 351);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt_box);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "agykerd";
@@ -79,7 +80,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txt_box;
         private System.Windows.Forms.Button button1;
     }
 }

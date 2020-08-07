@@ -41,9 +41,9 @@
             this.pingbar = new CircularProgressBar.CircularProgressBar();
             this.pingpong = new System.Windows.Forms.Label();
             this.pinglblb = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.rec_set = new System.Windows.Forms.Label();
             this.jatekosok = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.plugins_lbl = new System.Windows.Forms.Label();
             this.jatekossszam = new System.Windows.Forms.Label();
             this.plugins = new System.Windows.Forms.Label();
             this.version = new System.Windows.Forms.Label();
@@ -173,7 +173,6 @@
             this.button1.Size = new System.Drawing.Size(254, 72);
             this.button1.TabIndex = 17;
             this.button1.Text = "Adatok lekérdezése";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -231,35 +230,39 @@
             this.pinglblb.TabIndex = 0;
             this.pinglblb.Text = "160 ms";
             // 
-            // label2
+            // rec_set
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(221, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(344, 35);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Ajánlott beállítások:";
+            this.rec_set.AutoSize = true;
+            this.rec_set.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.rec_set.Location = new System.Drawing.Point(221, 28);
+            this.rec_set.Name = "rec_set";
+            this.rec_set.Size = new System.Drawing.Size(344, 35);
+            this.rec_set.TabIndex = 21;
+            this.rec_set.Text = "Ajánlott beállítások:";
             // 
             // jatekosok
             // 
             this.jatekosok.AutoSize = true;
             this.jatekosok.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.jatekosok.Location = new System.Drawing.Point(270, 179);
+            this.jatekosok.MinimumSize = new System.Drawing.Size(104, 23);
             this.jatekosok.Name = "jatekosok";
             this.jatekosok.Size = new System.Drawing.Size(104, 23);
             this.jatekosok.TabIndex = 22;
             this.jatekosok.Text = "Játékosok";
+            this.jatekosok.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // plugins_lbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(413, 179);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 23);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "Pluginok";
+            this.plugins_lbl.AutoSize = true;
+            this.plugins_lbl.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.plugins_lbl.Location = new System.Drawing.Point(413, 179);
+            this.plugins_lbl.MinimumSize = new System.Drawing.Size(92, 23);
+            this.plugins_lbl.Name = "plugins_lbl";
+            this.plugins_lbl.Size = new System.Drawing.Size(92, 23);
+            this.plugins_lbl.TabIndex = 23;
+            this.plugins_lbl.Text = "Pluginok";
+            this.plugins_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // jatekossszam
             // 
@@ -288,10 +291,10 @@
             // version
             // 
             this.version.AutoSize = true;
-            this.version.Font = new System.Drawing.Font("Microsoft Uighur", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.version.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.version.Location = new System.Drawing.Point(15, 35);
             this.version.Name = "version";
-            this.version.Size = new System.Drawing.Size(37, 28);
+            this.version.Size = new System.Drawing.Size(56, 25);
             this.version.TabIndex = 26;
             this.version.Text = "Beta";
             // 
@@ -303,9 +306,9 @@
             this.Controls.Add(this.version);
             this.Controls.Add(this.plugins);
             this.Controls.Add(this.jatekossszam);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.plugins_lbl);
             this.Controls.Add(this.jatekosok);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.rec_set);
             this.Controls.Add(this.pingbar);
             this.Controls.Add(this.pinglblb);
             this.Controls.Add(this.pingpong);
@@ -338,9 +341,9 @@
         private CircularProgressBar.CircularProgressBar pingbar;
         private System.Windows.Forms.Label pingpong;
         private System.Windows.Forms.Label pinglblb;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label rec_set;
         private System.Windows.Forms.Label jatekosok;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label plugins_lbl;
         private System.Windows.Forms.Label jatekossszam;
         private System.Windows.Forms.Label plugins;
         private System.Windows.Forms.Label version;

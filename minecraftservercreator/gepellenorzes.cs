@@ -11,6 +11,7 @@ using System.Threading;
 using System.Management;
 using System.Net.NetworkInformation;
 using Mono.Nat;
+using mcsc.Properties.Langs;
 
 namespace minecraftservercreator
 {
@@ -41,6 +42,14 @@ namespace minecraftservercreator
             pingbar.Minimum = 0;
             pingbar.Maximum = 60;
             pingbar.Value = 0;
+
+            if(mcsc.Properties.Settings.Default.lang == 1)
+            {
+                rec_set.Text = Lang_en.rec_settings;
+                jatekosok.Text = Lang_en.players;
+                plugins.Text = Lang_en.plugins;
+                button1.Text = Lang_en.adat_lekerd;
+            }
         }
 
         //
@@ -227,7 +236,15 @@ namespace minecraftservercreator
             plugins.Text = (jtszam + 200 - 3).ToString();
 
             button1.Enabled = true;
-            button1.Text = "tovább";
+            if(mcsc.Properties.Settings.Default.lang == 1)
+            {
+                button1.Text = Lang_en.tovabb;
+            }
+            else
+            {
+                button1.Text = Lang_hu.tovabb;
+            }
+
 
 
         }
@@ -254,7 +271,7 @@ namespace minecraftservercreator
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            if(button1.Text != "tovább")
+            if(button1.Text != "tovább" && button1.Text != Lang_en.tovabb)
             {
                 button1.Enabled = false;
 
