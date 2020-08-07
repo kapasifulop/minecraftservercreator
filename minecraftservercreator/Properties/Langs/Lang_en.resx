@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="agy" xml:space="preserve">
-    <value>Select the server "brain"!</value>
+    <value>Select the server's "brain"!</value>
   </data>
   <data name="already" xml:space="preserve">
-    <value>We have already found server with this name! Enter another name!</value>
+    <value>We have already found a server with this name! Enter another one!</value>
   </data>
   <data name="another_agy" xml:space="preserve">
-    <value>(We working on another brains)</value>
+    <value>(We're working on another brain)</value>
   </data>
   <data name="bukkit_not_avaliable" xml:space="preserve">
     <value>Bukkit is not avaliable yet!</value>
@@ -142,26 +142,26 @@
     <value>Fill all fields!</value>
   </data>
   <data name="f_bele" xml:space="preserve">
-    <value>Let's get started</value>
+    <value>Let's get started!</value>
   </data>
   <data name="select" xml:space="preserve">
-    <value>Select it!</value>
+    <value>Select</value>
   </data>
   <data name="spec_car" xml:space="preserve">
     <value>(Please enter the name without special characters)</value>
   </data>
   <data name="s_name" xml:space="preserve">
-    <value>What should be the name of the server?</value>
+    <value>Choose a name for your server!</value>
   </data>
   <data name="tovabb" xml:space="preserve">
     <value>Next</value>
   </data>
   <data name="udv" xml:space="preserve">
     <value>Welcome to the Minecraft Server Creator!
-We have questions to create your own server!
-If you don't know what is the best, you can click the question mark!</value>
+The installer will ask you questions to personalize your server.
+If you don't know what is the best option to choose, click the question marks next to each field.</value>
   </data>
   <data name="what_version" xml:space="preserve">
-    <value>Select version!</value>
+    <value>Select version</value>
   </data>
 </root>

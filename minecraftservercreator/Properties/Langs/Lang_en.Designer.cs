@@ -61,7 +61,7 @@ namespace mcsc.Properties.Langs {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select the server &quot;brain&quot;!.
+        ///   Looks up a localized string similar to Select the server&apos;s &quot;brain&quot;!.
         /// </summary>
         internal static string agy {
             get {
@@ -70,7 +70,7 @@ namespace mcsc.Properties.Langs {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We have already found server with this name! Enter another name!.
+        ///   Looks up a localized string similar to We have already found a server with this name! Enter another one!.
         /// </summary>
         internal static string already {
             get {
@@ -79,7 +79,7 @@ namespace mcsc.Properties.Langs {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to (We working on another brains).
+        ///   Looks up a localized string similar to (We&apos;re working on another brain).
         /// </summary>
         internal static string another_agy {
             get {
@@ -124,7 +124,7 @@ namespace mcsc.Properties.Langs {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Let&apos;s get started.
+        ///   Looks up a localized string similar to Let&apos;s get started!.
         /// </summary>
         internal static string f_bele {
             get {
@@ -142,7 +142,7 @@ namespace mcsc.Properties.Langs {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to What should be the name of the server?.
+        ///   Looks up a localized string similar to Choose a name for your server!.
         /// </summary>
         internal static string s_name {
             get {
@@ -151,7 +151,7 @@ namespace mcsc.Properties.Langs {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select it!.
+        ///   Looks up a localized string similar to Select.
         /// </summary>
         internal static string select {
             get {
@@ -179,8 +179,8 @@ namespace mcsc.Properties.Langs {
         
         /// <summary>
         ///   Looks up a localized string similar to Welcome to the Minecraft Server Creator!
-        ///We have questions to create your own server!
-        ///If you don&apos;t know what is the best, you can click the question mark!.
+        ///The installer will ask you questions to personalize your server.
+        ///If you don&apos;t know what is the best option to choose, click the question marks next to each field..
         /// </summary>
         internal static string udv {
             get {
@@ -189,7 +189,7 @@ namespace mcsc.Properties.Langs {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select version!.
+        ///   Looks up a localized string similar to Select version.
         /// </summary>
         internal static string what_version {
             get {
