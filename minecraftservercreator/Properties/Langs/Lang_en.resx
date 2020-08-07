@@ -117,8 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="agy" xml:space="preserve">
+    <value>Select the server "brain"!</value>
+  </data>
   <data name="already" xml:space="preserve">
     <value>We have already found server with this name! Enter another name!</value>
+  </data>
+  <data name="another_agy" xml:space="preserve">
+    <value>(We working on another brains)</value>
+  </data>
+  <data name="bukkit_not_avaliable" xml:space="preserve">
+    <value>Bukkit is not avaliable yet!</value>
+  </data>
+  <data name="dont_see" xml:space="preserve">
+    <value>(If you don't see the new version, the minecraft server creator is not compatible with this version yet!)</value>
   </data>
   <data name="enter_srv_name" xml:space="preserve">
     <value>Please enter the server name!</value>
@@ -126,8 +138,14 @@
   <data name="error" xml:space="preserve">
     <value>ERROR</value>
   </data>
+  <data name="fill_all_fields" xml:space="preserve">
+    <value>Fill all fields!</value>
+  </data>
   <data name="f_bele" xml:space="preserve">
     <value>Let's get started</value>
+  </data>
+  <data name="select" xml:space="preserve">
+    <value>Select it!</value>
   </data>
   <data name="spec_car" xml:space="preserve">
     <value>(Please enter the name without special characters)</value>
@@ -142,5 +160,8 @@
     <value>Welcome to the Minecraft Server Creator!
 We have questions to create your own server!
 If you don't know what is the best, you can click the question mark!</value>
+  </data>
+  <data name="what_version" xml:space="preserve">
+    <value>Select version!</value>
   </data>
 </root>

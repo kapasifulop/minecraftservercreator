@@ -61,11 +61,47 @@ namespace mcsc.Properties.Langs {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mi legyen a szervernek az &quot;agya&quot;?.
+        /// </summary>
+        internal static string agy {
+            get {
+                return ResourceManager.GetString("agy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ilyen nevű szerver már létezik! Adj meg egy másik nevet!.
         /// </summary>
         internal static string already {
             get {
                 return ResourceManager.GetString("already", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Az egyéb agyakon még dolgozunk!).
+        /// </summary>
+        internal static string another_agy {
+            get {
+                return ResourceManager.GetString("another_agy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A bukkit még nem elérhető!.
+        /// </summary>
+        internal static string bukkit_not_avaliable {
+            get {
+                return ResourceManager.GetString("bukkit_not_avaliable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Ha valamilyen verziót nem látsz, akkor abban a verzióban még nem lehetséges szervert készíteni).
+        /// </summary>
+        internal static string dont_see {
+            get {
+                return ResourceManager.GetString("dont_see", resourceCulture);
             }
         }
         
@@ -97,11 +133,29 @@ namespace mcsc.Properties.Langs {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Töltsd ki az összes mezőt!.
+        /// </summary>
+        internal static string fill_all_fields {
+            get {
+                return ResourceManager.GetString("fill_all_fields", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mi legyen a szerver neve?.
         /// </summary>
         internal static string s_name {
             get {
                 return ResourceManager.GetString("s_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Válaszd ki!.
+        /// </summary>
+        internal static string select {
+            get {
+                return ResourceManager.GetString("select", resourceCulture);
             }
         }
         
@@ -133,6 +187,15 @@ namespace mcsc.Properties.Langs {
         internal static string udv {
             get {
                 return ResourceManager.GetString("udv", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Milyen verzióban szeretnél játszani?.
+        /// </summary>
+        internal static string what_version {
+            get {
+                return ResourceManager.GetString("what_version", resourceCulture);
             }
         }
     }

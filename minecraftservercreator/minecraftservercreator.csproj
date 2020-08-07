@@ -382,7 +382,6 @@
     <EmbeddedResource Include="Vezerlofo.resx">
       <DependentUpon>Vezerlofo.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="minecraftservercreator_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\DataSources\About.datasource" />

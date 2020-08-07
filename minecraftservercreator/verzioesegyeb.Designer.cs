@@ -32,11 +32,11 @@
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.nextshp = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.start = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.label1 = new System.Windows.Forms.Label();
+            this.version_lbl = new System.Windows.Forms.Label();
             this.verzio = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.dont_see_lbl = new System.Windows.Forms.Label();
+            this.spigot_bukkit_lbl = new System.Windows.Forms.Label();
+            this.another = new System.Windows.Forms.Label();
             this.svb = new System.Windows.Forms.ComboBox();
             this.agykerd = new System.Windows.Forms.Button();
             this.verziokrd = new System.Windows.Forms.Button();
@@ -83,15 +83,17 @@
             this.start.Name = "";
             this.start.Size = new System.Drawing.Size(0, 0);
             // 
-            // label1
+            // version_lbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(140, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(498, 32);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Milyen verzióban szertnél játszani? ";
+            this.version_lbl.AutoSize = true;
+            this.version_lbl.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.version_lbl.Location = new System.Drawing.Point(140, 50);
+            this.version_lbl.MinimumSize = new System.Drawing.Size(498, 32);
+            this.version_lbl.Name = "version_lbl";
+            this.version_lbl.Size = new System.Drawing.Size(498, 32);
+            this.version_lbl.TabIndex = 1;
+            this.version_lbl.Text = "Milyen verzióban szertnél játszani? ";
+            this.version_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // verzio
             // 
@@ -135,34 +137,40 @@
             this.verzio.TabIndex = 2;
             this.verzio.Text = "Válaszd ki!";
             // 
-            // label2
+            // dont_see_lbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(155, 90);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(457, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "(ha valamilyen verziót nem látsz akkor abban a verzióban még nem lehetséges szerv" +
+            this.dont_see_lbl.AutoSize = true;
+            this.dont_see_lbl.Location = new System.Drawing.Point(155, 90);
+            this.dont_see_lbl.MinimumSize = new System.Drawing.Size(457, 13);
+            this.dont_see_lbl.Name = "dont_see_lbl";
+            this.dont_see_lbl.Size = new System.Drawing.Size(457, 13);
+            this.dont_see_lbl.TabIndex = 3;
+            this.dont_see_lbl.Text = "(ha valamilyen verziót nem látsz akkor abban a verzióban még nem lehetséges szerv" +
     "ert csinálni)";
+            this.dont_see_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // spigot_bukkit_lbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(140, 209);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(482, 32);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Mi legyen a szervernek az \"agya\"?";
+            this.spigot_bukkit_lbl.AutoSize = true;
+            this.spigot_bukkit_lbl.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.spigot_bukkit_lbl.Location = new System.Drawing.Point(140, 209);
+            this.spigot_bukkit_lbl.MinimumSize = new System.Drawing.Size(482, 32);
+            this.spigot_bukkit_lbl.Name = "spigot_bukkit_lbl";
+            this.spigot_bukkit_lbl.Size = new System.Drawing.Size(482, 32);
+            this.spigot_bukkit_lbl.TabIndex = 4;
+            this.spigot_bukkit_lbl.Text = "Mi legyen a szervernek az \"agya\"?";
+            this.spigot_bukkit_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // another
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(294, 241);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(185, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "(az egyéb \"agyakon\" még dolgozunk)";
+            this.another.AutoSize = true;
+            this.another.Location = new System.Drawing.Point(294, 241);
+            this.another.MinimumSize = new System.Drawing.Size(185, 13);
+            this.another.Name = "another";
+            this.another.Size = new System.Drawing.Size(185, 13);
+            this.another.TabIndex = 5;
+            this.another.Text = "(az egyéb \"agyakon\" még dolgozunk)";
+            this.another.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // svb
             // 
@@ -211,10 +219,12 @@
             this.nextlbl.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.nextlbl.ForeColor = System.Drawing.Color.White;
             this.nextlbl.Location = new System.Drawing.Point(319, 363);
+            this.nextlbl.MinimumSize = new System.Drawing.Size(143, 42);
             this.nextlbl.Name = "nextlbl";
             this.nextlbl.Size = new System.Drawing.Size(143, 42);
             this.nextlbl.TabIndex = 9;
             this.nextlbl.Text = "Tovább";
+            this.nextlbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.nextlbl.Click += new System.EventHandler(this.nextshp_Click);
             // 
             // fentiszar
@@ -303,11 +313,11 @@
             this.Controls.Add(this.verziokrd);
             this.Controls.Add(this.agykerd);
             this.Controls.Add(this.svb);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.another);
+            this.Controls.Add(this.spigot_bukkit_lbl);
+            this.Controls.Add(this.dont_see_lbl);
             this.Controls.Add(this.verzio);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.version_lbl);
             this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -322,11 +332,11 @@
 
         #endregion
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label version_lbl;
         private System.Windows.Forms.ComboBox verzio;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label dont_see_lbl;
+        private System.Windows.Forms.Label spigot_bukkit_lbl;
+        private System.Windows.Forms.Label another;
         private System.Windows.Forms.ComboBox svb;
         private System.Windows.Forms.Button agykerd;
         private System.Windows.Forms.Button verziokrd;

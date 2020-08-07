@@ -61,11 +61,47 @@ namespace mcsc.Properties.Langs {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Select the server &quot;brain&quot;!.
+        /// </summary>
+        internal static string agy {
+            get {
+                return ResourceManager.GetString("agy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to We have already found server with this name! Enter another name!.
         /// </summary>
         internal static string already {
             get {
                 return ResourceManager.GetString("already", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (We working on another brains).
+        /// </summary>
+        internal static string another_agy {
+            get {
+                return ResourceManager.GetString("another_agy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bukkit is not avaliable yet!.
+        /// </summary>
+        internal static string bukkit_not_avaliable {
+            get {
+                return ResourceManager.GetString("bukkit_not_avaliable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (If you don&apos;t see the new version, the minecraft server creator is not compatible with this version yet!).
+        /// </summary>
+        internal static string dont_see {
+            get {
+                return ResourceManager.GetString("dont_see", resourceCulture);
             }
         }
         
@@ -97,11 +133,29 @@ namespace mcsc.Properties.Langs {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fill all fields!.
+        /// </summary>
+        internal static string fill_all_fields {
+            get {
+                return ResourceManager.GetString("fill_all_fields", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to What should be the name of the server?.
         /// </summary>
         internal static string s_name {
             get {
                 return ResourceManager.GetString("s_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select it!.
+        /// </summary>
+        internal static string select {
+            get {
+                return ResourceManager.GetString("select", resourceCulture);
             }
         }
         
@@ -131,6 +185,15 @@ namespace mcsc.Properties.Langs {
         internal static string udv {
             get {
                 return ResourceManager.GetString("udv", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select version!.
+        /// </summary>
+        internal static string what_version {
+            get {
+                return ResourceManager.GetString("what_version", resourceCulture);
             }
         }
     }

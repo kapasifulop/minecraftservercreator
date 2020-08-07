@@ -117,8 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="agy" xml:space="preserve">
+    <value>Mi legyen a szervernek az "agya"?</value>
+  </data>
   <data name="already" xml:space="preserve">
     <value>Ilyen nevű szerver már létezik! Adj meg egy másik nevet!</value>
+  </data>
+  <data name="another_agy" xml:space="preserve">
+    <value>(Az egyéb agyakon még dolgozunk!)</value>
+  </data>
+  <data name="bukkit_not_avaliable" xml:space="preserve">
+    <value>A bukkit még nem elérhető!</value>
+  </data>
+  <data name="dont_see" xml:space="preserve">
+    <value>(Ha valamilyen verziót nem látsz, akkor abban a verzióban még nem lehetséges szervert készíteni)</value>
   </data>
   <data name="enter_srv_name" xml:space="preserve">
     <value>Írd be a szervered nevét!</value>
@@ -126,8 +138,14 @@
   <data name="error" xml:space="preserve">
     <value>Hiba</value>
   </data>
+  <data name="fill_all_fields" xml:space="preserve">
+    <value>Töltsd ki az összes mezőt!</value>
+  </data>
   <data name="f_bele" xml:space="preserve">
     <value>Fogjunk bele!</value>
+  </data>
+  <data name="select" xml:space="preserve">
+    <value>Válaszd ki!</value>
   </data>
   <data name="spec_car" xml:space="preserve">
     <value>(Lehetőleg speciális karakterek nélküli nevet adj meg)</value>
@@ -144,5 +162,8 @@ A szerver elkészítéséhez a telepítő fel fog tenni
 kérdéseket. Ha valamelyik kérdésre esetleg
 nem tudod a választ, akkor kattints a
 kérdés melletti kérdőjelre</value>
+  </data>
+  <data name="what_version" xml:space="preserve">
+    <value>Milyen verzióban szeretnél játszani?</value>
   </data>
 </root>
