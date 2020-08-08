@@ -117,8 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="adat_lekerd" xml:space="preserve">
+    <value>Adatok lekérdezése</value>
+  </data>
   <data name="agy" xml:space="preserve">
     <value>Mi legyen a szervernek az "agya"?</value>
+  </data>
+  <data name="agy_form" xml:space="preserve">
+    <value>Az úgynevezett "agy", a szerver egyik legfontosabb alkotóeleme.
+
+Ebből itt te kettő félét találsz. A Spigotot és a Bukkitot.
+
+Ezek között a legfőbb különbség, hogy a Spigot tudja futtatni a 
+bukkitos kiegészítőket is, viszont a Bukkit nem. 
+
+Ennek ellenére még sokan vannak akik  bukkitot használnak. 
+
+Hogyha esetleg egy olyan szervert szeretnél, ahol több féle
+ játékmód van, azaz több szerver fut egyszerre akkor ez csak a Spigot-al
+oldható meg ebben az alkalmazásban. Ez a funkció majd az 1.6-s verzióban
+lesz elérhető.
+
+Én neked a Spigot-t ajánlom.</value>
   </data>
   <data name="already" xml:space="preserve">
     <value>Ilyen nevű szerver már létezik! Adj meg egy másik nevet!</value>
@@ -144,6 +164,26 @@
   <data name="f_bele" xml:space="preserve">
     <value>Fogjunk bele!</value>
   </data>
+  <data name="not_recommented_versions" xml:space="preserve">
+    <value>Nem ajánlott verziók: 1.16.1</value>
+  </data>
+  <data name="players" xml:space="preserve">
+    <value>Játékosok</value>
+  </data>
+  <data name="plugins" xml:space="preserve">
+    <value>Pluginok</value>
+  </data>
+  <data name="recommented_versions" xml:space="preserve">
+    <value>Ajánlott verziók: 1.14.4
+                          1.14.3
+                          1.14.2
+                          1.14
+                          1.12.2
+                          1.12</value>
+  </data>
+  <data name="rec_settings" xml:space="preserve">
+    <value>Ajánlott beállítások:</value>
+  </data>
   <data name="select" xml:space="preserve">
     <value>Válaszd ki!</value>
   </data>
@@ -162,6 +202,14 @@ A szerver elkészítéséhez a telepítő fel fog tenni
 kérdéseket. Ha valamelyik kérdésre esetleg
 nem tudod a választ, akkor kattints a
 kérdés melletti kérdőjelre</value>
+  </data>
+  <data name="under" xml:space="preserve">
+    <value>1.12 alattiak</value>
+  </data>
+  <data name="verzio_form" xml:space="preserve">
+    <value>Válassz egy olyan verziót ami nem túl régi, de nem is nagyon új. 
+Ha nagyon újat választasz, sok kiegészítő (un. plugin) nem lesz elérhető. 
+Viszont ez a veszély akkor is előáll, ha nagyon régit választasz.</value>
   </data>
   <data name="what_version" xml:space="preserve">
     <value>Milyen verzióban szeretnél játszani?</value>

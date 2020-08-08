@@ -61,11 +61,40 @@ namespace mcsc.Properties.Langs {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Adatok lekérdezése.
+        /// </summary>
+        internal static string adat_lekerd {
+            get {
+                return ResourceManager.GetString("adat_lekerd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mi legyen a szervernek az &quot;agya&quot;?.
         /// </summary>
         internal static string agy {
             get {
                 return ResourceManager.GetString("agy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Az úgynevezett &quot;agy&quot;, a szerver egyik legfontosabb alkotóeleme.
+        ///
+        ///Ebből itt te kettő félét találsz. A Spigotot és a Bukkitot.
+        ///
+        ///Ezek között a legfőbb különbség, hogy a Spigot tudja futtatni a 
+        ///bukkitos kiegészítőket is, viszont a Bukkit nem. 
+        ///
+        ///Ennek ellenére még sokan vannak akik  bukkitot használnak. 
+        ///
+        ///Hogyha esetleg egy olyan szervert szeretnél, ahol több féle
+        /// játékmód van, azaz több szerver fut egyszerre akkor ez csak a Spigot-al
+        ///oldható meg ebben az alkalmazásban. Ez a funkció majd az 1.6-s ve [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string agy_form {
+            get {
+                return ResourceManager.GetString("agy_form", resourceCulture);
             }
         }
         
@@ -142,6 +171,56 @@ namespace mcsc.Properties.Langs {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Nem ajánlott verziók: 1.16.1.
+        /// </summary>
+        internal static string not_recommented_versions {
+            get {
+                return ResourceManager.GetString("not_recommented_versions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Játékosok.
+        /// </summary>
+        internal static string players {
+            get {
+                return ResourceManager.GetString("players", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pluginok.
+        /// </summary>
+        internal static string plugins {
+            get {
+                return ResourceManager.GetString("plugins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ajánlott beállítások:.
+        /// </summary>
+        internal static string rec_settings {
+            get {
+                return ResourceManager.GetString("rec_settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ajánlott verziók: 1.14.4
+        ///                          1.14.3
+        ///                          1.14.2
+        ///                          1.14
+        ///                          1.12.2
+        ///                          1.12.
+        /// </summary>
+        internal static string recommented_versions {
+            get {
+                return ResourceManager.GetString("recommented_versions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mi legyen a szerver neve?.
         /// </summary>
         internal static string s_name {
@@ -187,6 +266,26 @@ namespace mcsc.Properties.Langs {
         internal static string udv {
             get {
                 return ResourceManager.GetString("udv", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1.12 alattiak.
+        /// </summary>
+        internal static string under {
+            get {
+                return ResourceManager.GetString("under", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Válassz egy olyan verziót ami nem túl régi, de nem is nagyon új. 
+        ///Ha nagyon újat választasz, sok kiegészítő (un. plugin) nem lesz elérhető. 
+        ///Viszont ez a veszély akkor is előáll, ha nagyon régit választasz..
+        /// </summary>
+        internal static string verzio_form {
+            get {
+                return ResourceManager.GetString("verzio_form", resourceCulture);
             }
         }
         

@@ -12,6 +12,8 @@ using System.Management;
 using System.Net.NetworkInformation;
 using Mono.Nat;
 using mcsc.Properties.Langs;
+using System.Resources;
+using System.Reflection;
 
 namespace minecraftservercreator
 {
@@ -27,8 +29,20 @@ namespace minecraftservercreator
             InitializeComponent();
         }
 
+        ResourceManager rm = new ResourceManager("mcsc.Properties.Langs.Lang_hu", Assembly.GetExecutingAssembly());
+
         private void gepellenorzes_Load(object sender, EventArgs e)
         {
+
+            if (mcsc.Properties.Settings.Default.lang == 1)
+            {
+                rm = new ResourceManager("mcsc.Properties.Langs.Lang_en", Assembly.GetExecutingAssembly());
+            }
+            else if (mcsc.Properties.Settings.Default.lang == 0)
+            {
+                rm = new ResourceManager("mcsc.Properties.Langs.Lang_hu", Assembly.GetExecutingAssembly());
+            }
+
             version.Text = mcsc.Properties.Settings.Default.version;
             circularProgressBar1.Value = 0;
             circularProgressBar1.Minimum = 0;
@@ -43,13 +57,12 @@ namespace minecraftservercreator
             pingbar.Maximum = 60;
             pingbar.Value = 0;
 
-            if(mcsc.Properties.Settings.Default.lang == 1)
-            {
-                rec_set.Text = Lang_en.rec_settings;
-                jatekosok.Text = Lang_en.players;
-                plugins.Text = Lang_en.plugins;
-                button1.Text = Lang_en.adat_lekerd;
-            }
+            rec_set.Text = rm.GetString("rec_settings");
+            jatekosok.Text = rm.GetString("players");
+            plugins_lbl.Text = rm.GetString("plugins");
+            button1.Text = rm.GetString("adat_lekerd");
+
+
         }
 
         //
@@ -236,17 +249,7 @@ namespace minecraftservercreator
             plugins.Text = (jtszam + 200 - 3).ToString();
 
             button1.Enabled = true;
-            if(mcsc.Properties.Settings.Default.lang == 1)
-            {
-                button1.Text = Lang_en.tovabb;
-            }
-            else
-            {
-                button1.Text = Lang_hu.tovabb;
-            }
-
-
-
+            button1.Text = rm.GetString("tovabb");
         }
 
         public decimal jatekosszam(int ram, int ping)
@@ -271,7 +274,7 @@ namespace minecraftservercreator
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            if(button1.Text != "tovább" && button1.Text != Lang_en.tovabb)
+            if(button1.Text != Lang_hu.tovabb && button1.Text != Lang_en.tovabb)
             {
                 button1.Enabled = false;
 
