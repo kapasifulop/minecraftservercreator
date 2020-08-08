@@ -6,6 +6,8 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,6 +21,10 @@ namespace minecraftservercreator
         int movY;
 
         string s_name = "";
+
+        ResourceManager rm = new ResourceManager("mcsc.Properties.Langs.Lang_hu", Assembly.GetExecutingAssembly());
+
+
 
         public verzioesegyeb(string _s_name)
         {
@@ -82,15 +88,7 @@ namespace minecraftservercreator
             }
             else
             {
-                if (mcsc.Properties.Settings.Default.lang == 1)
-                {
-                    MessageBox.Show(Lang_en.fill_all_fields, Lang_en.error, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else if (mcsc.Properties.Settings.Default.lang == 0)
-                {
-                    MessageBox.Show(Lang_hu.fill_all_fields, Lang_hu.error, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                
+                MessageBox.Show(rm.GetString("fill_all_fields"), rm.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }
@@ -120,30 +118,25 @@ namespace minecraftservercreator
             //nextlbl.BackColor = Color.FromArgb(250, Color.White);
             version.Text = mcsc.Properties.Settings.Default.version;
 
-            if(mcsc.Properties.Settings.Default.lang == 1)
+            if (mcsc.Properties.Settings.Default.lang == 1)
             {
-                version_lbl.Text = Lang_en.what_version;
-                dont_see_lbl.Text = Lang_en.dont_see;
-                spigot_bukkit_lbl.Text = Lang_en.agy;
-                another.Text = Lang_en.another_agy;
+                rm = new ResourceManager("mcsc.Properties.Langs.Lang_en", Assembly.GetExecutingAssembly());
 
-                version.Text = Lang_en.select;
-                svb.Text = Lang_en.select;
-
-                nextlbl.Text = Lang_en.tovabb;
-
-            }else if(mcsc.Properties.Settings.Default.lang == 0)
-            {
-                version_lbl.Text = Lang_hu.what_version;
-                dont_see_lbl.Text = Lang_hu.dont_see;
-                spigot_bukkit_lbl.Text = Lang_hu.agy;
-                another.Text = Lang_hu.another_agy;
-
-                version.Text = Lang_hu.select;
-                svb.Text = Lang_hu.select;
-
-                nextlbl.Text = Lang_hu.tovabb;
             }
+            else if (mcsc.Properties.Settings.Default.lang == 0)
+            {
+                rm = new ResourceManager("mcsc.Properties.Langs.Lang_hu", Assembly.GetExecutingAssembly());
+            }
+
+                version_lbl.Text = rm.GetString("what_version");
+                dont_see_lbl.Text = rm.GetString("dont_see");
+                spigot_bukkit_lbl.Text = rm.GetString("agy");
+                another.Text = rm.GetString("another_agy");
+
+                version.Text = rm.GetString("select");
+                svb.Text = rm.GetString("select");
+
+                nextlbl.Text = rm.GetString("tovabb");
         }
 
         private void svb_SelectedIndexChanged(object sender, EventArgs e)
@@ -151,17 +144,8 @@ namespace minecraftservercreator
 
             if (svb.SelectedItem == "Bukkit")
             {
-                if (mcsc.Properties.Settings.Default.lang == 1)
-                {
-                    MessageBox.Show(Lang_en.bukkit_not_avaliable, Lang_en.error, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    svb.SelectedItem = "Spigot";
-                }
-                else if (mcsc.Properties.Settings.Default.lang == 0)
-                {
-                    MessageBox.Show(Lang_hu.bukkit_not_avaliable, Lang_hu.error, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    svb.SelectedItem = "Spigot";
-                }
-
+                MessageBox.Show(rm.GetString("bukkit_not_avaliable"), rm.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                svb.SelectedItem = "Spigot";
             }
         }
     }

@@ -7,6 +7,8 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,21 +26,24 @@ namespace mcsc
         {
             InitializeComponent();
         }
+        ResourceManager rm = new ResourceManager("mcsc.Properties.Langs.Lang_hu", Assembly.GetExecutingAssembly());
 
         private void Server_Name_Load(object sender, EventArgs e)
-        {
+        { 
             if (mcsc.Properties.Settings.Default.lang == 1)
             {
-                srv_name.Text = Lang_en.s_name;
-                spec_car_lbl.Text = Lang_en.spec_car;
-                nextlbl.Text = Lang_en.tovabb;
+                rm = new ResourceManager("mcsc.Properties.Langs.Lang_en", Assembly.GetExecutingAssembly());
+
             }
             else if (mcsc.Properties.Settings.Default.lang == 0)
             {
-                srv_name.Text = Lang_hu.s_name;
-                spec_car_lbl.Text = Lang_hu.spec_car;
-                nextlbl.Text = Lang_hu.tovabb;
+                rm = new ResourceManager("mcsc.Properties.Langs.Lang_hu", Assembly.GetExecutingAssembly());
             }
+
+            srv_name.Text = rm.GetString("s_name");
+            spec_car_lbl.Text = rm.GetString("spec_car");
+            nextlbl.Text = rm.GetString("tovabb");
+
         }
 
         private void tovabb(object sender, EventArgs e)
@@ -84,28 +89,14 @@ namespace mcsc
                 }
                 else
                 {
-                    if (mcsc.Properties.Settings.Default.lang == 1)
-                    {
-                        MessageBox.Show(Lang_en.already, Lang_en.error, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else if (mcsc.Properties.Settings.Default.lang == 0)
-                    {
-                        MessageBox.Show(Lang_hu.already, Lang_hu.error, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    
+                    MessageBox.Show(rm.GetString("already"), rm.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+
                 }
             }
             else
             {
-                if (mcsc.Properties.Settings.Default.lang == 1)
-                {
-                    MessageBox.Show(Lang_en.enter_srv_name, Lang_en.error, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else if (mcsc.Properties.Settings.Default.lang == 0)
-                {
-                    MessageBox.Show(Lang_hu.enter_srv_name, Lang_hu.error, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                
+                MessageBox.Show(rm.GetString("enter_srv_name"), rm.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
