@@ -7,3 +7,5 @@
 ![GUI](https://github.com/kapasifulop/minecraftservercreator/blob/master/minecraftservercreator/images/mcsc_settings.png?raw=true)
 ![GUI](https://github.com/kapasifulop/minecraftservercreator/blob/master/minecraftservercreator/images/mcsc_sname.png?raw=true)
 ![GUI](https://github.com/kapasifulop/minecraftservercreator/blob/master/minecraftservercreator/images/mcsc_version.png?raw=true)
+## Buy me a coffee ☕:
+**[PayPal](https://www.paypal.me/kapasifulop)**
